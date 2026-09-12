@@ -1,0 +1,15 @@
+{
+  "name": "bistro-next-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Approved V2 Bistro Next UX case-study website",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/dev.mjs --dir dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
