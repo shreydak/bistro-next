@@ -125,3 +125,12 @@ body{overflow-x:visible}
   .pick{grid-template-columns:84px 1fr;margin-inline:10px}
 }
 
+/* V2.2 public presentation details */
+footer{display:block}
+.footer-inner{width:min(1180px,100%);margin-inline:auto}
+.footer-meta{display:flex;justify-content:space-between;gap:24px}
+.project-disclaimer{max-width:900px;margin:18px 0 0;padding-top:18px;border-top:1px solid #38423d;color:#a8b2ad;font-size:.74rem;line-height:1.55}
+@media(max-width:640px){
+  .footer-meta{flex-direction:column;gap:5px}
+  .project-disclaimer{margin-top:17px;padding-top:17px;font-size:.76rem;line-height:1.6}
+}
