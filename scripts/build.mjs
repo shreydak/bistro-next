@@ -16,8 +16,15 @@ for (const file of ["index.html", "styles.css", "app.js"]) {
   await copyFile(join(projectRoot, file), join(outputDirectory, file));
 }
 
-await copyFile(
-  join(projectRoot, "assets", "food-images.css"),
-  join(outputDirectory, "assets", "food-images.css")
-);
+for (const asset of [
+  "food-images.css",
+  "favicon.svg",
+  "social-preview.png",
+]) {
+  await copyFile(
+    join(projectRoot, "assets", asset),
+    join(outputDirectory, "assets", asset)
+  );
+}
+
 console.log(`Production build created at ${outputDirectory}`);
