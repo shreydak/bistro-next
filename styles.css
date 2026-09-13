@@ -17,3 +17,111 @@
 @media(max-width:900px){.experiment-model{grid-template-columns:1fr}.experiment-model i{transform:none;justify-self:center}.walk-copy .case-demo-btn{width:100%}}
 @media(max-width:640px){.shortcut-card{margin-top:7px}.mini-product .mini-food{height:62px}.product-card{grid-template-columns:105px 1fr}.experiment-model{margin-top:40px}.case-demo-btn{min-height:48px}.bottom-sheet{max-height:88%}}
 
+/* V2.1 mobile QA and responsive polish */
+body{overflow-x:visible}
+.flow-arrow,.flow-add,.vertical-connector{display:grid;place-items:center;flex:0 0 auto}
+.flow-arrow svg,.flow-add svg,.vertical-connector svg,.icon-nav svg,.inline-chevron,.sheet-close svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.flow-add .mobile-connector{display:none}
+.icon-nav{display:inline-grid;place-items:center;width:28px;height:44px;color:#202a25}
+.inline-chevron{width:16px;height:16px;vertical-align:-3px;margin-left:3px}
+.sheet-demo-action{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--green-deep);padding-top:12px;border-top:1px solid var(--line)}
+.sheet-close{width:44px;height:44px;right:10px;top:9px;display:grid;place-items:center}
+.sheet-close svg{width:19px;height:19px}
+
+@media(max-width:900px){
+  .decision-flow .flow-add{transform:none}
+  .flow-add .desktop-connector{display:none}
+  .flow-add .mobile-connector{display:block}
+  .decision-flow .flow-arrow,.validation-flow .flow-arrow{transform:rotate(90deg)}
+  .phone,.sheet-demo{width:min(100%,390px);margin-inline:auto}
+}
+
+@media(max-width:640px){
+  .site-header{height:68px;padding-inline:14px}
+  .brand{min-height:44px;font-size:.88rem}
+  .page-shell{width:calc(100% - 28px)}
+  .section{padding:76px 0}
+  .section-no{margin-bottom:20px}
+  h2{font-size:clamp(2.15rem,11vw,3.15rem);line-height:1.01;letter-spacing:-.045em}
+  .hero{padding:96px 0 68px}
+  .hero h1{font-size:clamp(3.65rem,19vw,4.4rem);line-height:.84;margin:18px 0 27px}
+  .hero-subtitle{font-size:clamp(1.2rem,6vw,1.4rem);line-height:1.22}
+  .hero-support{font-size:.94rem}
+  .hero-phone-wrap{margin-top:10px}
+  .diagnosis{padding:78px 0}
+  .diagnosis-inner>p{font-size:clamp(2.55rem,13vw,4rem);line-height:1}
+  .diagnosis-grid{margin-top:48px}
+  .assist{padding:76px 0 24px}
+  .assist-intro h2,.limitations h2,.closing h2{font-size:clamp(2.55rem,12vw,3.7rem);line-height:1.01}
+  .walkthrough{padding-top:76px}
+  .walkthrough-intro,.assist-intro{margin-bottom:62px}
+  .walkthrough-intro p,.assist-intro>p{margin-top:20px}
+  .walk-row{gap:34px;margin-bottom:76px}
+  .walk-copy h3{font-size:clamp(2.05rem,10vw,3rem);line-height:1.03;margin:14px 0 20px}
+  .walk-copy>p{font-size:1rem}
+  .annotation{margin-top:28px;padding-left:17px}
+  .wide-statement{margin-top:64px;padding:34px 0;font-size:clamp(1.6rem,8.2vw,2.2rem)}
+  .context-wheel{margin-top:48px}
+  .decision-flow{margin:38px 0 30px;gap:7px}
+  .decision-flow div{padding:18px 20px;min-height:82px}
+  .decision-flow i{width:32px;height:32px;justify-self:center}
+  .principles{gap:8px}
+  .principles span{padding:9px 13px}
+  .phone{max-width:390px;border-radius:28px}
+  .return-phone{height:680px}
+  .intent-phone{height:630px}
+  .assist-form-phone{height:610px}
+  .trust-strip{margin:28px 14px;padding:16px}
+  .intent-row button,.assist-chips button,.bistro-cta,.text-action,.product-actions button,.browse-link,.case-demo-btn,.browse-tile button,.pick button{min-height:44px}
+  .intent-row button,.assist-chips button{padding:10px 13px}
+  .shortcut-card .intent-row button{min-height:40px;padding:7px 10px}
+  .shortcut-card .bistro-cta{min-height:44px}
+  .mini-product button{min-width:44px;min-height:40px;top:31px}
+  .product-body h4{font-size:.92rem}
+  .product-body p,.reason-tags span{font-size:.7rem;line-height:1.25}
+  .product-meta{font-size:.72rem}
+  .product-actions button{font-size:.66rem;padding:8px}
+  .bottom-sheet{padding:20px 20px 18px}
+  .bottom-sheet h3{padding-right:45px}
+  .signal-group b{font-size:.72rem}
+  .signal-group p{font-size:.7rem;line-height:1.35}
+  .bottom-sheet>small{font-size:.64rem;line-height:1.35}
+  .assist-body{padding:21px 17px}
+  .assist-body h3{font-size:1.28rem}
+  .pick h4{font-size:.88rem}
+  .pick span,.pick p{font-size:.69rem;line-height:1.25}
+  .pick button{font-size:.62rem}
+  .before-after h2{margin-bottom:38px}
+  .comparison{border-top:0;display:grid;gap:16px}
+  .comparison .compare-head{display:none}
+  .comparison>div{display:grid;grid-template-columns:1fr;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+  .comparison span{position:relative;padding:17px 18px 19px;font-size:.94rem;line-height:1.35}
+  .comparison span::before{content:attr(data-label);display:block;margin-bottom:7px;font-size:.62rem;font-weight:900;letter-spacing:.09em;color:#6a756f}
+  .comparison span:first-child{padding-bottom:35px}
+  .comparison span:first-child::after{content:"";position:absolute;left:50%;bottom:11px;width:8px;height:8px;border-right:2px solid var(--green-deep);border-bottom:2px solid var(--green-deep);transform:translateX(-50%) rotate(45deg)}
+  .comparison span:last-child{border-top:1px solid #b8d9c7;background:var(--mint)}
+  .comparison span:last-child::before{color:var(--green-deep)}
+  .experiment-model{margin-top:34px;gap:7px}
+  .experiment-model i{width:32px;height:32px;justify-self:center}
+  .experiment-note{text-align:left;margin-top:14px}
+  .limit-grid{margin-top:42px}
+  .validation-flow{gap:6px}
+  .validation-flow i{width:32px;height:32px;align-self:center;margin-left:0}
+  .closing{padding:108px 0 62px}
+  .closing p{font-size:1rem;max-width:310px;margin-inline:auto}
+  footer{padding:27px 18px 36px;line-height:1.45}
+}
+
+@media(max-width:350px){
+  .page-shell{width:calc(100% - 24px)}
+  .hero h1{font-size:3.55rem}
+  .phone{border-radius:25px}
+  .product-card{grid-template-columns:98px 1fr;margin-inline:10px}
+  .product-body{padding:9px}
+  .product-actions{gap:5px}
+  .product-actions button{padding-inline:6px}
+  .assist-chips{gap:5px}
+  .assist-chips button{padding-inline:10px}
+  .pick{grid-template-columns:84px 1fr;margin-inline:10px}
+}
+
